@@ -1,4 +1,4 @@
-var formulaire=document.getElementById("formulaire");
+var formulaire=document.getElementById("formulaireCueilleur");
 
 function getNavigateur() {
   var xhr; 
@@ -21,11 +21,7 @@ function sendData() {
       if(xhr.readyState === 4){
           if(xhr.status === 200){
             var reponse = JSON.parse(xhr.responseText);
-            if (reponse=="success") {
-              window.location.href="../../pages/affichages/insertVariete.php";
-            }else{
-              alert("Verifier votre email ou mot de passe");
-            }
+              alert(reponse);
           }
       }
     };
@@ -37,7 +33,7 @@ function sendData() {
         alert('Oups! Quelque chose s\'est mal passé.');
     });
     
-    xhr.open("POST", "../../pages/traitements/formulaireLogin.php");
+    xhr.open("POST", "../../pages/traitements/formulaireCueilleur.php");
         
     var formData = new FormData(formulaire);
     

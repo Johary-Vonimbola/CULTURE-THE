@@ -34,6 +34,9 @@ echo " Email : ".$_SESSION['user']['email']."<br>";
       <button type="submit" class="btn btn-info validation">Valider</button>
     </form>
 </div>
+<a href="./insertCueilleur.php">Inserer Cueilleur</a>
+<a href="./insertParcelle.php">Inserer Parcelle</a>
+<a href="./insertVariete.php">Inserer Variete</a>
 <script src="../../assets/js/variete.js"></script>
 </body>
 </html>

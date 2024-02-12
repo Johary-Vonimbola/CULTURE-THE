@@ -36,6 +36,7 @@ CREATE TABLE parcelle(
     FOREIGN KEY (idVarietePlantee) REFERENCES variete(idVariete)
 )engine=innodb;
 
+INSERT INTO parcelle VALUES(DEFAULT,'Johary','Vonimbola','M');
 
 CREATE TABLE cueilleur(
     idCueilleur INT auto_increment primary key,
