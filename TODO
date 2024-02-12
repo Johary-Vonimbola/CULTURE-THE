@@ -15,8 +15,8 @@ Projet : Culture de the
                     -Salaire(par kg)
         -Metier 
             1-Traitement-login :
-                -crypter(password)
-                -checkLogin(email , password)
+                -(OK)crypter(password)
+                -(OK)checkLogin(email , password)
             2-Acceuil : 
                 -Fonction : 
                     -insertVariete(nom , occupation , rendement)
